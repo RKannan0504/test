@@ -1,4 +1,3 @@
-
 name: Run Python Script Daily
 
 on:
@@ -29,12 +28,12 @@ jobs:
       - name: Send email with result
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.example.com
+          server_address: smtp.gmail.com
           server_port: 587
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          to: recipient@example.com
-          from: sender@example.com
+          to: Kannan13111@gmail.com
+          from: ${{ secrets.EMAIL_USERNAME }}
           subject: Daily Script Result
           body: |
             Please find the result attached.
