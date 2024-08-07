@@ -23,8 +23,7 @@ jobs:
 
       - name: Run script
         run: |
-          python C:\Users\kannanr\PycharmProjects\pythoninterviewTask\interviewTask\reverseString.py
- > output.txt
+          python C:\Users\kannanr\PycharmProjects\pythoninterviewTask\interviewTask\reverseString.py > output.txt
 
       - name: Send email with result
         uses: dawidd6/action-send-mail@v3
